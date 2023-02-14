@@ -1,0 +1,111 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  outline: 2px solid red;
+}
+body {
+  background-image: url(Picture\ \(3\).jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.high {
+  position: relative;
+  color: #ffffff;
+  display: inline;
+  transition: all 1s ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  background-position: bottom;
+  background: linear-gradient(
+    45deg,
+    rgb(228, 228, 228) 43%,
+    rgb(112, 109, 109)
+  );
+  background-size: 0% 3px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transform-origin: bottom left;
+  text-shadow: 0 0 3px white;
+}
+
+.high:hover {
+  /* background-size: 100% 3px; */
+  transform-origin: bottom left;
+  text-shadow: 0 0 15px white;
+  cursor: default;
+}
+
+.heading {
+  display: inline;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 250px;
+  min-width: 400px;
+  max-width: 500px;
+  text-shadow: 0 0 3px rgb(12, 12, 12);
+  background-color: rgba(63, 62, 62, 0.4);
+  border-radius:20px ;
+  -webkit-border-radius:20px ;
+  -moz-border-radius:20px ;
+  -ms-border-radius:20px ;
+  -o-border-radius:20px ;
+  box-shadow: 0 0 6px 6px rgb(63, 62, 62,0.4);
+}
+
+.change {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  height: 65px;
+}
+
+.box {
+  animation: ani 5s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation: ani 10s ease-in-out infinite;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+  }
+  50% {
+    transform: translateY(-170px);
+    -webkit-transform: translateY(-170px);
+    -moz-transform: translateY(-170px);
+    -ms-transform: translateY(-170px);
+    -o-transform: translateY(-170px);
+  }
+  86% {
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+a{font-size: 20px;}
