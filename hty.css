@@ -49,12 +49,12 @@ body {
   max-width: 500px;
   text-shadow: 0 0 3px rgb(12, 12, 12);
   background-color: rgba(63, 62, 62, 0.4);
-  border-radius:20px ;
-  -webkit-border-radius:20px ;
-  -moz-border-radius:20px ;
-  -ms-border-radius:20px ;
-  -o-border-radius:20px ;
-  box-shadow: 0 0 6px 6px rgb(63, 62, 62,0.4);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 6px 6px rgb(63, 62, 62, 0.4);
 }
 
 .change {
@@ -108,4 +108,11 @@ body {
   }
 }
 
-a{font-size: 20px;}
+a {
+  font-size: 20px;
+}
+.topping a {
+  display: flex;
+  flex-direction: row;
+  align-items: space-;
+}
