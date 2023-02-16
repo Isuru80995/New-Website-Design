@@ -124,11 +124,11 @@ justify-content: flex-end;
   margin: 15px;
   text-decoration: none;
   color: rgb(24, 23, 23);
-  transition: all 200ms ease-in-out;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
+  transition: all 10ms ease-in-out;
+  -webkit-transition: all 10ms ease-in-out;
+  -moz-transition: all 10ms ease-in-out;
+  -ms-transition: all 10ms ease-in-out;
+  -o-transition: all 10ms ease-in-out;
   text-shadow: 0 0 px white;
 }
 
