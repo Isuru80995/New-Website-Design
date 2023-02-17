@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  word-spacing: 6px;
+}
+body {
+  background: url(Capture.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.sentance {
+  max-width: 400px;
+  position: absolute;
+  top: 300px;
+  font-size: 40px;
+  padding-left: 30px;
+  display: inline-block;
+  padding: 20px;
+  background-color: rgba(139, 19, 19, 0.3);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contain {
+  padding-left: 10px;
+  white-space: nowrap;
+  display: inline;
+}
+
+.contain span {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  animation: kiki 15s linear infinite;
+  -webkit-animation: kiki 15s linear infinite ;
+}
+
+.contain span:nth-child(1) {
+  color: darkblue;
+}
+
+.contain span:nth-child(2) {
+  animation-delay: 3s;
+  color: aqua;
+}
+
+.contain span:nth-child(3) {
+  animation-delay: 6s;
+  color: red;
+}
+.contain span:nth-child(4) {
+  animation-delay: 9s;
+  color: blue;
+}
+.contain span:nth-child(5) {
+  animation-delay: 12s;
+  color: brown;
+}
+@keyframes kiki {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    height: 0px;
+  }
+  10% {
+    opacity: 0.3;
+    height: 0px;
+  }
+  30% {
+    opacity: 1;
+    height: 100%;
+  }
+  32% {
+    opacity: 0;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
