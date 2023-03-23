@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+svg {
+  height: 2em;
+  fill: blue;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.submenu {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

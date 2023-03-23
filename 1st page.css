@@ -1,0 +1,115 @@
+* {
+  /* outline: 1px dashed red; */
+  margin: 0;
+}
+body {
+  background-color: #212121;
+}
+
+.Menu {
+  margin: 0;
+  display: flex;
+  height: 3em;
+  align-items: center;
+  margin: 0;
+  color: white;
+  justify-content: flex-end;
+  gap: 10px;
+  background: linear-gradient(0deg, rgb(157, 46, 46) 45%, rgba(208, 30, 30));
+}
+
+.submenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.submenu ul {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  gap: 10px;
+  justify-content: space-around;
+}
+.submenu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.social {
+  transition: all 0.6s;
+  position: relative;
+  display: flex;
+  height: 2em;
+  justify-content: space-around;
+  width: 150px;
+  align-items: center;
+  border-radius: 999em;
+  padding: 0.5em;
+  background: linear-gradient(180deg, rgb(79, 35, 35) 23%, rgb(0, 0, 0, 0));
+}
+
+.socialanim {
+  position: absolute;
+  transition: all 0.6s;
+}
+
+svg {
+  cursor: pointer;
+  transition: all 0.6s;
+  height: 1em;
+  fill: blue;
+  opacity: 0;
+  padding: 0.6em;
+  scale: 1.5;
+}
+svg:first-child {
+  fill: red;
+}
+
+svg:last-child {
+  fill: black;
+}
+
+.social:hover span {
+  transition: all 1s;
+  scale: 1.4;
+  opacity: 0;
+}
+.social:hover svg {
+  opacity: 1;
+  transition: all 1s;
+}
+
+svg:hover {
+  animation: sca 1s linear infinite;
+}
+
+@keyframes sca {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.Menu span:last-child {
+  background-color: rgb(77, 30, 30);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu span:hover:last-child
+backgri
