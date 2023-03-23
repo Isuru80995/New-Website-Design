@@ -15,6 +15,7 @@ body {
   color: white;
   justify-content: flex-end;
   gap: 10px;
+  flex-wrap: nowrap;
   background: linear-gradient(0deg, rgb(157, 46, 46) 45%, rgba(208, 30, 30));
 }
 
@@ -37,16 +38,19 @@ body {
 }
 
 .social {
-  transition: all 0.6s;
+  transition: all 0.2s;
   position: relative;
   display: flex;
   height: 2em;
   justify-content: space-around;
   width: 150px;
   align-items: center;
-  border-radius: 999em;
   padding: 0.5em;
   background: linear-gradient(180deg, rgb(79, 35, 35) 23%, rgb(0, 0, 0, 0));
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .socialanim {
@@ -72,9 +76,12 @@ svg:last-child {
 }
 
 .social:hover span {
-  transition: all 1s;
-  scale: 1.4;
+  transition: all 0.2s;
   opacity: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 .social:hover svg {
   opacity: 1;
@@ -101,6 +108,7 @@ svg:hover {
 }
 
 .Menu span:last-child {
+  transition: all 0.6s;
   background-color: rgb(77, 30, 30);
   height: 100%;
   display: flex;
@@ -111,5 +119,12 @@ svg:hover {
   padding: 0;
 }
 
-.Menu span:hover:last-child
-backgri
+.Menu span:hover:last-child {
+  cursor: pointer;
+  transition: all 0.6s;
+  background-color: rgb(39, 6, 6);
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
